@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  /* Primary */
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+
+  /* Neutral */
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  /* outline: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+}
+
+body {
+  place-content: center;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--paleBlue);
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top -300px right -200px;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+button {
+  display: block;
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.btn {
+  padding: 0.8rem 0 0.8rem 0;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: #70768e;
+  /* border: 1px solid red; */
+  width: 100%;
+  font-weight: 700;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.card {
+  text-align: center;
+  background-color: white;
+  width: 80%;
+  max-width: 450px;
+  min-width: 320px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card-body {
+  padding: 0 1.5rem 1rem 1.5rem;
+}
+
+.card-name {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 1rem 0;
+  color: var(--darkBlue);
+  font-weight: 900;
+}
+
+.plan-info {
+  color: var(--desaturatedBlue);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.selected-plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--veryPaleBlue);
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.plan {
+  display: inherit;
+  align-items: center;
+}
+
+.plan div {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.plan-name {
+  font-weight: 900;
+  color: var(--darkBlue);
+}
+
+.plan-price {
+  color: var(--desaturatedBlue);
+}
+
+.change-plan {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--brightBlue);
+}
+
+.icon {
+  width: fit-content;
+  margin-right: 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proceed {
+  background-color: var(--brightBlue);
+  color: white;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.cancel {
+  font-weight: 900;
+}
+
+@media (min-width: 600px) {
+  body {
+    background: green;
+  }
+}
